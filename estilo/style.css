@@ -45,7 +45,6 @@ div{
 }
 
 .painel{
-    background-color:white;
     width: 61%;
     height: 10%;
     margin-top: 10px;
@@ -55,11 +54,13 @@ div{
     padding: 10px;
     border-radius: 10px;
     width: 350px;
-    height: 75%;
+    height: 100%;
     background-color: aqua;
-    outline: none;
     border: 1px solid rgb(3, 116, 136);
     font-size: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width:992px) {

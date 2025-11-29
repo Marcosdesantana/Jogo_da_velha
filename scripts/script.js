@@ -21,143 +21,86 @@ function receber_valor(valor){
     if(vetor[valor] != 1 && vetor[valor] != 2){
         vetor[valor] = jogar
     }
-
-    if(jogar == 1){
-        jogar = 2
-        letra = 'x'
-    }else{
-        jogar = 1
-        letra = 'o'
-    } 
+       if(jogar == 1){
+          jogar = 2
+          letra = 'x'
+       }else{
+          jogar = 1
+          letra = 'o'
+       } 
 }
 
 function receber_letra(id){
 
-    if(id == 0){
+    if(id == 0 && divi1.innerHTML == ''){
         divi1.innerHTML = `${letra}`
     }
 
-    if(id == 1){
+    if(id == 1 && divi2.innerHTML == ''){
         divi2.innerHTML = `${letra}`
     }
 
-    if(id == 2){
+    if(id == 2 && divi3.innerHTML == ''){
         divi3.innerHTML = `${letra}`
     }
 
-    if(id == 3){
+    if(id == 3 && divi4.innerHTML == ''){
         divi4.innerHTML = `${letra}`
     }
 
-    if(id == 4){
+    if(id == 4 && divi5.innerHTML == ''){
         divi5.innerHTML = `${letra}`
     }
 
-    if(id == 5){
+    if(id == 5 && divi6.innerHTML == ''){
         divi6.innerHTML = `${letra}`
     }
 
-    if(id == 6){
+    if(id == 6 && divi7.innerHTML == ''){
         divi7.innerHTML = `${letra}`
     }
 
-    if(id == 7){
+    if(id == 7 && divi8.innerHTML == ''){
         divi8.innerHTML = `${letra}`
     }
 
-    if(id == 8){
+    if(id == 8 && divi9.innerHTML == ''){
         divi9.innerHTML = `${letra}`
     }
 
     //comando de fim de jogo
     
     if(vetor[2] == vetor[4] && vetor[4] == vetor[6] && vetor[6] != 3){
-       alert('fim de jogo')
-       vetor = []
-       for(let c = 0 ; c < 9; c++){
-          vetor[c] = 3
-        }
-        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
-        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
-        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+       gameover()
 
     }
 
     if(vetor[0] == vetor[4] && vetor[4] == vetor[8] && vetor[8] != 3){
-       alert('fim de jogo')
-       vetor = []
-       for(let c = 0 ; c < 9; c++){
-          vetor[c] = 3
-        }
-        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
-        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
-        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+       gameover()
     }
     
     if(vetor[0] == vetor[3] && vetor[3] == vetor[6] && vetor[6] != 3){
-       alert('fim de jogo')
-       vetor = []
-       for(let c = 0 ; c < 9; c++){
-          vetor[c] = 3
-        }
-        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
-        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
-        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+       gameover()
     }
 
     if(vetor[0] == vetor[1] && vetor[1] == vetor[2] && vetor[2] != 3){
-       alert('fim de jogo')
-       vetor = []
-       for(let c = 0 ; c < 9; c++){
-          vetor[c] = 3
-        }
-        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
-        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
-        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+       gameover()
     }
 
     if(vetor[3] == vetor[4] && vetor[4] == vetor[5] && vetor[5] != 3){
-       alert('fim de jogo')
-       vetor = []
-       for(let c = 0 ; c < 9; c++){
-          vetor[c] = 3
-        }
-        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
-        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
-        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+       gameover()
     }
 
     if(vetor[6] == vetor[7] && vetor[7] == vetor[8] && vetor[8] != 3){
-       alert('fim de jogo')
-       vetor = []
-       for(let c = 0 ; c < 9; c++){
-          vetor[c] = 3
-        }
-        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
-        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
-        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+       gameover()
     }
 
     if(vetor[1] == vetor[4] && vetor[4] == vetor[7] && vetor[7] != 3){
-       alert('fim de jogo')
-       vetor = []
-       for(let c = 0 ; c < 9; c++){
-          vetor[c] = 3
-        }
-        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
-        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
-        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+       gameover()
     }
 
     if(vetor[2] == vetor[5] && vetor[5] == vetor[8] && vetor[8] != 3){
-       alert('fim de jogo')
-       vetor = []
-       for(let c = 0 ; c < 9; c++){
-          vetor[c] = 3
-        }
-        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
-        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
-        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+       gameover()
     }  
 }
 
@@ -170,5 +113,16 @@ function resetar(){
         divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
         divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
 
+}
+
+function gameover(){
+    alert('fim de jogo')
+    vetor = []
+    for(let c = 0 ; c < 9; c++){
+        vetor[c] = 3
+    }
+        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
+        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
+        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
 }
 
