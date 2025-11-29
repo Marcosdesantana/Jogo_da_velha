@@ -17,17 +17,20 @@ for(let c = 0 ; c < 9; c++){
 }
 
 function receber_valor(valor){
-    
-    if(vetor[valor] != 1 && vetor[valor] != 2){
+    if(vetor[valor] == 3){
+
+       if(vetor[valor] != 1 && vetor[valor] != 2){
         vetor[valor] = jogar
-    }
+       }
+
        if(jogar == 1){
           jogar = 2
           letra = 'x'
        }else{
           jogar = 1
           letra = 'o'
-       } 
+       }
+    } 
 }
 
 function receber_letra(id){
