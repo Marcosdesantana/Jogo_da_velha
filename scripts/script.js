@@ -161,3 +161,14 @@ function receber_letra(id){
     }  
 }
 
+function resetar(){
+    vetor = []
+    for(let c = 0 ; c < 9; c++){
+        vetor[c] = 3
+    }
+        divi1.innerHTML = '' ; divi2.innerHTML = '' ; divi3.innerHTML = ''
+        divi4.innerHTML = '' ; divi5.innerHTML = '' ; divi6.innerHTML = ''
+        divi7.innerHTML = '' ; divi8.innerHTML = '' ; divi9.innerHTML = ''
+
+}
+

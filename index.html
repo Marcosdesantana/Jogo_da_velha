@@ -9,15 +9,24 @@
 <body>
         <section id="principal">
             <div class="jogo">
-                <div onclick="receber_valor(0) , receber_letra(0)" class="divi_1"></div>
-                <div onclick="receber_valor(1) , receber_letra(1)" class="divi_2"></div>
-                <div onclick="receber_valor(2) , receber_letra(2)" class="divi_3"></div>
-                <div onclick="receber_valor(3) , receber_letra(3)" class="divi_4"></div>
-                <div onclick="receber_valor(4) , receber_letra(4)" class="divi_5"></div>
-                <div onclick="receber_valor(5) , receber_letra(5)" class="divi_6"></div>
-                <div onclick="receber_valor(6) , receber_letra(6)" class="divi_7"></div>
-                <div onclick="receber_valor(7) , receber_letra(7)" class="divi_8"></div>
-                <div onclick="receber_valor(8) , receber_letra(8)" class="divi_9"></div>
+                <div class="alinhar">
+                    <div id="celulas" onclick="receber_valor(0) , receber_letra(0)" class="divi_1"></div>
+                    <div id="celulas" onclick="receber_valor(1) , receber_letra(1)" class="divi_2"></div>
+                    <div id="celulas" onclick="receber_valor(2) , receber_letra(2)" class="divi_3"></div>
+                </div>
+                <div class="alinhar">
+                    <div id="celulas" onclick="receber_valor(3) , receber_letra(3)" class="divi_4"></div>
+                    <div id="celulas" onclick="receber_valor(4) , receber_letra(4)" class="divi_5"></div>
+                    <div id="celulas" onclick="receber_valor(5) , receber_letra(5)" class="divi_6"></div>
+                </div>
+                <div class="alinhar">
+                    <div id="celulas" onclick="receber_valor(6) , receber_letra(6)" class="divi_7"></div>
+                    <div id="celulas" onclick="receber_valor(7) , receber_letra(7)" class="divi_8"></div>
+                    <div id="celulas" onclick="receber_valor(8) , receber_letra(8)" class="divi_9"></div>
+                </div>
+                <div class="painel">
+                    <button id="resetar" onclick="resetar()">Resetar</button>
+                </div>
             </div>
         </section>
     
