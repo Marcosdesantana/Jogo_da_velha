@@ -72,7 +72,7 @@ div{
     }
 
     #celulas{
-      max-height:150px;
+      max-height:190px;
       width: 100px;
       margin: 4px;  
     }
@@ -83,10 +83,10 @@ div{
 
     #principal{
         font-size: 3em;
+        height: 100dvh;
     }
 
     .painel{
-        background-color:white;
         width: 83%;
         height: 10%;
     }
