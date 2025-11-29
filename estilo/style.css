@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#principal{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 5em;
+}
+
+.jogo{
+    background-color: aquamarine;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:10px;
+}
+
+div{
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:325px;
+   
+}
+
